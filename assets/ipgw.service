@@ -1,0 +1,10 @@
+[Unit]
+Description=NEU IP Gateway
+After=network.target
+
+[Service]
+Type=once
+ExecStart=/home/chiyuki/.local/bin/ipgw
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# 由于我的网络工具运行在 TUN 模式，因此 `ipgw test` 方法无法使用，此脚本只用于做题
+
+ipgw_status="$(ipgw test | tail -1 | awk -F"   " '{printf $2}')"
+
+if [ "$ipgw_status" == "no" ]; then
+	echo "campus network logged out, restarting ..."
+	systemctl restart --user ipgw.service
+fi
