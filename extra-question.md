@@ -29,6 +29,10 @@
 
   EDIT: 在 Microsoft Office 中点击文件 - 信息，在属性中点击「显示所有属性」，可看到提示 `RC4 cipher` 和 `Key:pioneer`，解密得 `paRT7:32e`
 
+### Day 3
+
+- 打开 ppt 第四页，在右侧选择窗格中可看到 `UGFSdDU9Xzlvbw==`，解码得 `PaRt5=_9oo`
+
 ### 失败的尝试
 
 - 提高图片亮度，未找到信息
@@ -37,9 +41,7 @@
 
 ### Flag
 
-`flag{y0u_are_Really   d_u132e3_aT_Pp7}`
-
-还差一个 flag 5
+`flag{y0u_are_Really_9ood_u132e3_aT_Pp7}`
 
 ### 拼图题
 
