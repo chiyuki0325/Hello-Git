@@ -39,10 +39,18 @@
 - 检查 png 格式的图片的文件尾，tEXt 等，未找到信息
 - 使用几款隐写术检查 jpg 格式图片，未找到信息
 
-### Flag
+### ppt 题 Flag
 
 `flag{y0u_are_Really_9ood_u132e3_aT_Pp7}`
 
 ### 拼图题
 
-解压 ppt 得到 `broken_TOGENASHITOGEARI.zip`，在 `IEND` 后写着图片的顺序，拼好后得到图片。但我并没从每个像素的最末位中拿到有效信息，只好作罢。
+解压 ppt 得到 `broken_TOGENASHITOGEARI.zip`，在 `IEND` 后写着图片的顺序，拼好后得到图片。
+
+使用脚本提取每个像素的最后一位，并按照 RGBRGBRGB... 的格式组合成最终的图片。灵感来自去年的 [流式星球](https://github.com/USTC-Hackergame/hackergame2023-writeups/tree/master/official/%F0%9F%AA%90%20%E6%B5%81%E5%BC%8F%E6%98%9F%E7%90%83) 一题，并且可以直接用去年的解题脚本解出答案。
+
+图片宽度为 500，穷举得出。
+
+![image-20240913222600293](https://imgsrc.baidu.com/forum/pic/item/d788d43f8794a4c2b793130948f41bd5ad6e3964.jpg)
+
+为什么？为什么要 `flag{We1c0me_T0_NeU_p10NeeR_rd01p8gciy_and_waTch_GBC_thAnks}`
