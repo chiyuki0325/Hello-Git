@@ -1,11 +1,12 @@
 #!/bin/bash
 
-music="/home/chiyuki/音乐/带词的/Robin Schulz,David Guetta,Cheat Codes - Shed a Light.flac"
+media="/home/chiyuki/视频/原神启动.mp4"
 
 cat <<EOF >~/.config/autostart/genshin-impact-launch.desktop
 [Desktop Entry]
 Name=你说得对 但是原神
-Exec=/usr/bin/mpv "${music}" --no-border --no-embed --no-video
+Type=Application
+Exec=/usr/bin/mpv --no-border --fullscreen "${media}"
 Terminal=false
 X-GNOME-Autostart-enabled=true
 EOF
